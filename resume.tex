@@ -1,0 +1,156 @@
+%-------------------------
+% Resume in LateX
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/jorgealcaras}{\Large Jorge Alcaras}} & Email: \href{mailto:alcaras.183@gmail.com}{alcaras.183@gmail.com}\\
+  \href{https://github.com/jorgealcaras}{github.com/jorgealcaras} & Mobile: \href{tel:+524491635042}{+52 449 163 5042} \\
+\end{tabular*}
+
+%--------ABOUT ME------------
+\section{About Me}
+    {I am a Software Engineer specialized in mobile solutions, driven by a lifelong passion for science and technology. My curiosity began early with electricity, which led me to experiment at a young age—including building a hydrogen generator—and later study electrical systems in high school. This foundation evolved into a fascination with industrial machinery and automation, motivating me to pursue a technical degree in Machine Tools, where I gained hands-on experience with both manual processes and CNC automation. That was the moment I discovered my passion for engineering in all its forms—electrical, mechanical, and software. Today, I channel that multidisciplinary background into software development, where I solve real-world challenges through code and consistently deliver creative, user-focused solutions.}
+
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages: }{Dart (Flutter), Java, SQL (MySQL and SQLite).}
+    }
+    \item{
+      \textbf{Technologies: }{Google Cloud Platform (Firebase, Firestore and AIM), Git (GitHub) and WebRTC.}
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {CCEO - Software Development}{Aguascalientes, Mexico}
+    {Mobile Engineer}{Jan 2024 -- Present}
+    \resumeItemListStart
+
+      \resumeItem{AgroHub}
+        {Led the development of a cross-platform e-commerce mobile application for the purchase and sale of agricultural equipment, using \textbf{Flutter}. Designed and implemented the complete purchase flow, including a "Buy Now" feature with \textbf{Stripe} integration. Developed an \textbf{AI-powered support chatbot}, managed complex forms, and created intuitive, user-focused UI designs to boost engagement and conversion rates.}
+
+      \resumeItem{COLP}
+        {Responsible for the mobile development of an \textbf{ERP system} aimed at remote team coordination and task management. Integrated \textbf{WebRTC voice calls} using \textbf{Firebase} and \textbf{Firestore}. Built GPS-based attendance tracking, task assignment forms, evidence submission tools, and a custom scheduling calendar. Used \textbf{GitHub} for version control and developed a reusable component library to accelerate development.}
+
+      \resumeItem{Healf}
+        {Contributed to the digital transformation of the insurance sector through mobile solutions focused on process automation and enhanced communication between insurers, agents, and customers. Delivered features such as claim registration, reimbursement tracking, onboarding kits, and dashboards. Prioritized \textbf{data security} and compliance, improving operational efficiency and customer service.}
+
+      \resumeItem{Fitness App}
+        {Designed and developed a personalized health and fitness tracking mobile application focused on monitoring user weight, body measurements, and diet. Managed the entire app development lifecycle and implemented the subscription-based purchase flow using \textbf{Stripe}. Applied \textbf{mathematical matrix operations} to optimize dynamic content rendering, significantly improving real-time performance. Enabled one-on-one progress tracking with professional trainers and health advisors.}
+
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{QuantSoftware Toolkit}
+%       {Open source Python library for financial data analysis and machine learning for finance.}
+%   \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Polytechnic University of Aguascalientes}{Aguascalientes, Mexico}
+      {Bachelor of Engineering in Computer Systems}{Sep 2022 -- Apr 2026}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
