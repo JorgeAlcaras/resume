@@ -13,7 +13,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -33,6 +33,11 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
+\definecolor{blue}{rgb}{0.1,0.5,1}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
 
 \raggedbottom
 \raggedright
@@ -105,10 +110,10 @@
 \section{Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Languages: }{Dart (Flutter), Java, SQL (MySQL and SQLite).}
+      \textbf{Languages: }{Dart (Flutter), Kotlin (Jetpack Compose), Java, SQL (MySQL and SQLite).}
     }
     \item{
-      \textbf{Technologies: }{Google Cloud Platform (Firebase, Firestore and AIM), Git (GitHub) and WebRTC.}
+      \textbf{Technologies: }{Google Cloud Platform (Firebase, Firestore and AIM), Azure (IoT Hub, Function App, Blob Storage), Git (GitHub) and WebRTC.}
     }
   \resumeSubHeadingListEnd
 
@@ -128,10 +133,10 @@
         {Responsible for the mobile development of an \textbf{ERP system} aimed at remote team coordination and task management. Integrated \textbf{WebRTC voice calls} using \textbf{Firebase} and \textbf{Firestore}. Built GPS-based attendance tracking, task assignment forms, evidence submission tools, and a custom scheduling calendar. Used \textbf{GitHub} for version control and developed a reusable component library to accelerate development.}
 
       \resumeItem{Healf}
-        {Contributed to the digital transformation of the insurance sector through mobile solutions focused on process automation and enhanced communication between insurers, agents, and customers. Delivered features such as claim registration, reimbursement tracking, onboarding kits, and dashboards. Prioritized \textbf{data security} and compliance, improving operational efficiency and customer service.}
+        {Contributed to the digital transformation of the insurance sector through mobile solutions focused on process automation and enhanced communication between insurers, agents, and customers. Delivered features such as claim registration, reimbursement tracking, onboarding kits, and dashboards. Prioritized \textbf{data security} and compliance, improving operational efficiency and customer service. Developed using \textbf{Kotlin} with \textbf{Jetpack Compose}.}
 
       \resumeItem{Fitness App}
-        {Designed and developed a personalized health and fitness tracking mobile application focused on monitoring user weight, body measurements, and diet. Managed the entire app development lifecycle and implemented the subscription-based purchase flow using \textbf{Stripe}. Applied \textbf{mathematical matrix operations} to optimize dynamic content rendering, significantly improving real-time performance. Enabled one-on-one progress tracking with professional trainers and health advisors.}
+        {Designed and developed a personalized health and fitness tracking mobile application focused on monitoring user weight, body measurements, and diet. Managed the entire app development lifecycle and implemented the subscription-based purchase flow using \textbf{Stripe}. Applied \textbf{mathematical matrix operations} to optimize dynamic content rendering, significantly improving real-time performance. Enabled one-on-one progress tracking with professional trainers and health advisors. Developed using \textbf{Kotlin} with \textbf{Jetpack Compose}.}
 
     \resumeItemListEnd
 
@@ -145,12 +150,28 @@
 %   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Microsoft}{Aguascalientes, Mexico}
+      {\href{https://learn.microsoft.com/api/credentials/share/en-us/JorgeAlcaras-8796/997EF918DF52E952?sharingId=7AD7FD7D3BD1D94C}{Azure Fundamentals}}{Nov 2025}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Polytechnic University of Aguascalientes}{Aguascalientes, Mexico}
       {Bachelor of Engineering in Computer Systems}{Sep 2022 -- Apr 2026}
+      \resumeItemListStart
+
+      \resumeItem{HydroAgroSense}
+        {Intelligent irrigation system developed using a \textbf{Raspberry Pi} and an \textbf{Arduino Uno}, the latter used as a replacement for an analog-to-digital converter for reading analog sensors. The system is primarily programmed in \textbf{Python} and integrates tools such as \textbf{TensorFlow}, \textbf{TensorFlow Lite}, \textbf{Scikit-Learn}, and \textbf{NumPy} for image processing with the goal of detecting plant diseases.
+
+        Sensor readings handled by the Arduino are programmed in \textbf{C}, and all collected data is stored in \textbf{Microsoft Azure}, where it can be accessed through a mobile application developed in \textbf{Kotlin} using \textbf{Jetpack Compose}.}
+    \resumeItemListEnd
   \resumeSubHeadingListEnd
+
 
 %-------------------------------------------
 \end{document}
